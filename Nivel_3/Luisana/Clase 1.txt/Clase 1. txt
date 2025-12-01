@@ -1,0 +1,9 @@
+    1) Seleccionar Plantillas  de www.bootstrapmade.com
+    Puede ser seleccionado otro modelo de referencia
+    indicando en el buscados web "Plantillas gratis HTML"
+    2) Registrar el dominio donde se publicará el sitio web
+    3) Se recurre a la IA generativa, por ejemplo Gemini en el promt se diria la siguiente instruccion: Asume el rol de experto en desarrollo web, toma el archivo anexo, reemplaza el contenido con el texto alusivo al area de negocios y servicios de SynergyFit el cual se encargara de importar productos tecmologicos tales como Roku android para tv, proyectores, Gps para motos, microfonos desde China excatamente por la pagina de alibaba para comercializar en Venezuela. Conserva el diseño, imagenes videos, estructura, estilo de letras del archivo actual. Pon en practica las recomendaciones acerca de SEO (optimizacion de motores de busqueda) para este sitio. genera por completo el archivo resultado despues de la actualizacion
+    NOTA: es conveniente que el archivo anexo sea un .TXT ya que falicita al motor de la IA el contenido INDEX
+    4) una vez efectuada la adaptacion se procede a subir al hosting el proyecto ya actualizado. Para ello se utiliza la FZ  (FileZilla) https://filezilla-project.org/
+5) Cración del Chatbot para nuestra aplicacion https://dashboard.tawk.to/#/admin/691e08c2de995e195e99b9f1/channels/chat-widget se debe configurar el chatbot 
+5.1) Crear propiedad 

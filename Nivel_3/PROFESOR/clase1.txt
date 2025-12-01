@@ -1,0 +1,49 @@
+1) Seleccionar plantilla de www.bootstrapmade.com
+Puede ser seleccionado otro modelo se referencia,
+indicando en el buscador web "Plantillas gratis HTML".
+https://bootstrapmade.com/
+
+2) Registrar el dominio donde se publicará el sitio
+web.
+https://www.alwaysdata.com/en/
+
+3)Se recurre a la IA Generativa, por ejemplo en el
+prompt de GEMINI, se daría la siguiente instrucción:
+PROMPT: Asume el rol de experto en desarrollo WEB,
+toma el archivo anexo, reemplaza el contenido con 
+texto alusivo al área de negocios y servicios de "Tecnologías de la Información". Conserva el diseño, imagenes, videos, estructura, estilo de letras del archivo actual. Pon en practica las recomendaciones acerca de SEO (Optimización de Motores de Búsqueda)
+para este sitio. Genera por completo el archivo resultado después de la actualización.
+
+NOTA: Es conveniente que el archivo anexo sea un .txt 
+para el caso del index.html 
+
+4) Una vez efectuada la adaptación, se procede a subir al 
+hosting el proyecto ya actualizado. Para ello se utiliza 
+la aplicación "filezilla"
+https://filezilla-project.org/download.php?platform=win64
+
+5) Creación del chatbot, para nuestra aplicación web
+Acceder a la https://www.tawk.to/
+(Registro de usuario y clave)
+
+Se debe configurar el chatbot
+5-1) Creación de Propiedad (Create Property)
+
+http://luisaalibaba.alwaysdata.net/
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/692dee6da8d9cb198023b926/1jbdmmn1f';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+PROMPT PARA LA IMAGEN DEL CHATBOT
+Asume el rol de experto en diseño gráfico, toma como referencia la imagen anexa y genera una imagen donde los colores a destacar sean tonos de azul y blanco, destacando un aspecto tecnológico

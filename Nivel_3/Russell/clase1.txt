@@ -1,0 +1,14 @@
+1) Seleccionar plantilla de bootstrapmade u otro modelo de refeencia en GOOGLE 
+
+2) Registrar un dominio donde se publicara el sitio web (oOlwaysData)
+
+3) Adaptar la plantilla con la  IA generativa ( GEMINI ) "Asume el rol de experto en desarrollo WEB,
+toma el archivo anexo, reemplaza el contenido con 
+texto alusivo al área de negocios y servicios de "Tecnologías de la Información". Conserva el diseño, imagenes, videos, estructura, estilo de letras del archivo actual. Pon en practica las recomendaciones acerca de SEO (Optimización de Motores de Búsqueda)
+para este sitio. Genera por completo el archivo resultado después de la actualización."
+
+NOTA: Es conveniente que el HTML de la pagina web sea convertido en TXT.
+
+4) Una vez efectuado el preoceso, se preocede subir al HOST el proyecto actualizado. Para ello se usa FileZilla.
+
+5) Crear el chat Bot con Tawk.to para agregarlo a la pagina web 

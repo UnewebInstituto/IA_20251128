@@ -1,0 +1,31 @@
+1) Seleccionar plantilla de www.bootstrapmade.com
+Puede ser seleccionado otro modelo se referencia,
+indicando en el buscador web "Plantillas gratis HTML"
+
+2) Registrar el dominio donde se publicará el sitio
+web.
+
+3)Se recurre a la IA Generativa, por ejemplo en el
+prompt de GEMINI, se daría la siguiente instrucción:
+PROMPT: asume el rol de experto en desarrollo web, toma el archivo anexo. Reemplaza el contenido con el texto alusivo al área de negocios y servicio de una vida saludable y activa bajo un régimen de una alimentación inteligente y entrenamientos físicos, conserva el diseño, imágenes, videos, estructura, estilo de letras del archivo actual. Pon en practica las recomendaciones acerca de SEO (optimización de motores de búsqueda) para este sitio. Genera por completo el archivo resultado después de la actualización.
+
+NOTA: Es conveniente que el archivo anexo sea un .txt 
+para el caso del index.html 
+
+4) Una vez efectuada la adaptación, se procede a subir al 
+hosting el proyecto ya actualizado. Para ello se utiliza 
+la aplicación "filezilla"
+https://filezilla-project.org/download.php?platform=win64
+
+5) Creación del chatbot, para nuestra aplicación web
+Acceder a la https://www.tawk.to/
+(Registro de usuario y clave)
+
+Se debe configurar el chatbot
+5-1) Creación de Propiedad (Create Property)
+Mi propiedad es Bienestar life 
+
+ESTA ES MI PAGINA WEB
+http://petarepavenezuela.alwaysdata.net/
+
+ETIQUETA DE CODIGO QUE ME GENERO LUEGO DE CREAR MI PROPIEDAD 

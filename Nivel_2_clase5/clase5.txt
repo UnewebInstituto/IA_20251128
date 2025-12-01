@@ -26,5 +26,5 @@ para este sitio. Genera por completo el archivo resultado después de la actuali
 Una vez completada la actualización, procedemos
 a incorporar el chat bot "Tawk to"
 
-http://luisaalibaba.alwaysdata.net/index.html
+http://luisaalibaba.alwaysdata.net/
 
