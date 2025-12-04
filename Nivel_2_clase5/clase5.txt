@@ -28,3 +28,121 @@ a incorporar el chat bot "Tawk to"
 
 http://luisaalibaba.alwaysdata.net/
 
+
+CHAT BOTS
+
+La lista de aplicaciones que ofrecen funcionalidades equivalentes a tawk.to, especialmente en lo que respecta a **chat en vivo, bots, y herramientas de soporte**, es extensa. La elección de la mejor alternativa dependerá de si usted busca una solución gratuita, una con funcionalidades avanzadas de IA, o una plataforma de centro de ayuda completa.
+
+Aquí tiene una lista de las principales aplicaciones de chatbot y chat en vivo, categorizadas según su enfoque:
+
+---
+
+## 🚀 1. Alternativas Orientadas a la Plataforma Conversacional (Competidores Directos)
+
+Estas son plataformas que, al igual que tawk.to, se centran en el chat en tiempo real, pero a menudo con mayores capacidades de automatización e integración avanzada (muchas veces bajo planes de pago).
+
+| Aplicación | Enfoque Principal | Ventaja Clave frente a tawk.to |
+| :--- | :--- | :--- |
+| **Tidio** | Chat en vivo + Bots y Email Marketing. | Ofrece un constructor de chatbot visual con plantillas y un plan gratuito muy generoso. Es muy popular entre e-commerce. |
+| **Crisp** | Chat en vivo, CRM y Bandeja de Entrada Compartida (*Shared Inbox*). | Interfaz moderna, combina el chat con herramientas de marketing (email, *drip campaigns*) y una gestión de contactos integrada. |
+| **LiveChat** | Chat en vivo profesional con funciones avanzadas de *targeting* y reportes. | Se enfoca en la venta proactiva, tiene integraciones sólidas y análisis más detallados del rendimiento del agente. |
+| **Olark** | Chat en vivo simple, personalizable y con informes detallados. | Ofrece una solución sencilla y muy enfocada en la analítica de chat y la segmentación de visitantes. |
+
+## 🧠 2. Alternativas Orientadas a la Experiencia del Cliente (CX) y la IA
+
+Estas plataformas van más allá del chat simple, ofreciendo soluciones completas que incluyen análisis predictivo, bots avanzados y soluciones *omnichannel* (como se describe en su artículo):
+
+| Aplicación | Enfoque Principal | Ventaja Clave frente a tawk.to |
+| :--- | :--- | :--- |
+| **Intercom** | Plataforma de Relaciones Conversacionales (CRP) y Bots con IA (*Fin AI Agent*). | Excelente para *onboarding* de clientes, *lead generation* y automatización inteligente de flujos de trabajo con bots de alta gama. |
+| **Zoho SalesIQ** | Chat en vivo, *Lead Scoring* y Analítica de Visitantes (parte del ecosistema Zoho). | **Ideal si ya usa Zoho CRM** u otros productos de Zoho, ya que ofrece una integración nativa y bots de IA (Zobots) incluidos en sus planes de pago. |
+| **Drift** | Conversational Marketing y Bots para Generación de Leads. | Se enfoca en la cualificación automática de leads de alta calidad, usando bots para dirigir a los prospectos al equipo de ventas adecuado. |
+| **Freshchat** (Freshworks) | Mensajería *Omnichannel* con bots de IA. | Permite centralizar conversaciones de WhatsApp, Messenger, web, etc., con capacidades de IA para el autoservicio. |
+
+## 💼 3. Alternativas Orientadas al Centro de Ayuda Completo (*Help Desk*)
+
+Estas son soluciones *all-in-one* donde el chat en vivo es un módulo dentro de un sistema más grande de gestión de tickets y base de conocimiento.
+
+| Aplicación | Enfoque Principal | Ventaja Clave frente a tawk.to |
+| :--- | :--- | :--- |
+| **Zendesk** | Plataforma de servicio al cliente completa (*Help Desk*). | Ofrece gestión robusta de tickets, base de conocimiento y opciones de chat y *messaging* escalables para grandes empresas. |
+| **Freshdesk** (Freshworks) | Software de Mesa de Ayuda. | Integra el chat en vivo con un sistema de tickets muy eficiente, automatizando la conversión de chats a tickets de soporte. |
+| **LiveAgent** | *Help Desk* con Contact Center, Ticketing y Chat en vivo. | Combina todos los canales (email, teléfono, chat) en una única bandeja de entrada de tickets, ideal para equipos que necesitan centralizar todo. |
+
+**Nota sobre tawk.to:** La principal ventaja de tawk.to sigue siendo su robusta oferta de chat en vivo **gratuita**. Las alternativas mencionadas, aunque ofrecen funciones de IA y automatización más avanzadas, suelen requerir una suscripción de pago para acceder a dichas funcionalidades.
+
+
+HERRAMIENTAS DE INTEGRACIÓN EQUIVALENTES A ZAPIER:
+El equivalente de aplicaciones a **Zapier** son plataformas de **Integración de Aplicaciones como Servicio (iPaaS)** que permiten automatizar flujos de trabajo (workflows) sin necesidad de escribir código.
+
+Estas herramientas son esenciales para conectar dos o más aplicaciones (como tawk.to y Zoho CRM, por ejemplo) y hacer que intercambien datos automáticamente.
+
+Aquí tiene una lista de las principales alternativas y sus enfoques clave:
+
+---
+
+## ⚙️ Principales Alternativas a Zapier
+
+| Aplicación | Enfoque Principal | Ventaja Clave | Modelo de Precios |
+| :--- | :--- | :--- | :--- |
+| **Make** (anteriormente Integromat) | Automatización visual compleja y avanzada. | Ofrece un control más granular sobre el flujo de datos (bucles, condiciones) y una visualización modular que simula diagramas de flujo. Suele ser más rentable para automatizaciones de gran volumen. | Basado en el número de **operaciones** (pasos) ejecutadas. |
+| **Integrately** | Automatización "en un clic" y alta facilidad de uso. | Se centra en plantillas de automatización prediseñadas que se configuran en pocos pasos, ideal para usuarios que necesitan soluciones rápidas sin mucha personalización. | Ofrece planes gratuitos y pagos basados en tareas. |
+| **Pabbly Connect** | Enfoque en volumen y asequibilidad. | Ofrece un modelo de precios muy competitivo, a menudo permitiendo muchas más tareas a un costo menor que sus competidores. Es popular para empresas con grandes volúmenes de automatización. | Basado en el número de tareas (suele ser más generoso que Zapier). |
+| **IFTTT** (If This Then That) | Automatización personal y de IoT (Internet de las Cosas). | Ideal para automatizar tareas sencillas entre aplicaciones personales o dispositivos inteligentes (ej. publicar una foto de Instagram en Twitter automáticamente). Menos enfocado en flujos de negocio complejos. | Gratuito para uso básico; planes Pro para funciones avanzadas. |
+
+## 🏢 Alternativas de Nivel Empresarial y Ecosistemas de Plataforma
+
+Estas opciones son a menudo más robustas, más complejas de configurar o están diseñadas para integrarse profundamente con un ecosistema de software específico:
+
+| Aplicación | Enfoque Principal | Ventaja Clave | Modelo de Precios |
+| :--- | :--- | :--- | :--- |
+| **Microsoft Power Automate** | Automatización dentro del ecosistema Microsoft (Office 365, Dynamics, SharePoint). | Integración nativa y profunda con herramientas como Teams, Excel, SharePoint y Dynamics 365, siendo la opción natural para entornos empresariales que utilizan la suite de Microsoft. | Basado en licencias de usuario y ejecuciones de flujos. |
+| **Workato** | iPaaS de nivel empresarial para TI y operaciones de negocio. | Diseñado para automatizaciones críticas, complejas y a gran escala, con características avanzadas de seguridad, gobernanza y manejo de errores. Suele ser usado por grandes corporaciones. | Modelo de precios de nivel empresarial (más costoso). |
+| **Tray.io** | Automatización para marketing, ventas y soporte (dirigido a equipos de negocio). | Ofrece una plataforma potente para construir flujos de trabajo personalizados que conectan diferentes aplicaciones de SaaS empresariales. | Dirigido a usuarios y equipos profesionales. |
+
+### ¿Cuál elegir?
+
+* Si busca una herramienta **similar a Zapier** en facilidad de uso, pero quizás más poderosa visualmente, elija **Make**.
+* Si busca la **solución más económica** para grandes volúmenes de tareas, revise **Pabbly Connect** o **Integrately**.
+* Si su empresa está fuertemente alineada con Microsoft (por ejemplo, usa Teams y Dynamics), **Microsoft Power Automate** es la opción lógica.
+
+
+HERRAMIENTAS EQUIVALENTES ZOHO CRMZoho CRM es conocido por su amplio ecosistema de aplicaciones (Zoho One) y sus planes de precios competitivos. Las aplicaciones equivalentes se pueden categorizar en función de si el usuario busca una solución robusta y líder del mercado, o una que esté más integrada con otras suites de software específicas (como Microsoft u HubSpot).
+
+Aquí tiene una lista de las principales aplicaciones de CRM equivalentes a Zoho CRM, organizadas por su enfoque:
+
+---
+
+## 🥇 1. Líderes del Mercado y Soluciones Robustas
+
+Estas son las soluciones más grandes y con mayor trayectoria, adecuadas para empresas de todos los tamaños que buscan una plataforma escalable y rica en funciones.
+
+| Aplicación | Enfoque Principal | Ventaja Clave frente a Zoho |
+| :--- | :--- | :--- |
+| **Salesforce Sales Cloud** | CRM completo, líder mundial y altamente personalizable. | Ofrece una plataforma con la mayor capacidad de **personalización y escalabilidad** del mercado (mediante AppExchange), ideal para grandes empresas y necesidades muy específicas. |
+| **Microsoft Dynamics 365** | CRM dentro del ecosistema Microsoft. | **Integración nativa** con Office 365 (Outlook, Teams, Excel) y Azure. Es la opción preferida si la empresa ya utiliza intensamente el software de Microsoft. |
+| **Zendesk Sell** (anteriormente Base CRM) | Enfoque en la simplicidad para el equipo de ventas. | Excelente si la empresa ya usa la suite de soporte de Zendesk (Zendesk Support/Service), ya que se integra perfectamente con el flujo de atención al cliente. |
+
+## 🤝 2. Soluciones Centradas en el Inbound y Marketing
+
+Estas plataformas nacieron con un fuerte enfoque en atraer y nutrir leads (Inbound Marketing), siendo a menudo más intuitivas para los equipos de marketing y ventas que dependen del contenido digital.
+
+| Aplicación | Enfoque Principal | Ventaja Clave frente a Zoho |
+| :--- | :--- | :--- |
+| **HubSpot CRM** | CRM completamente gratuito con módulos pagos de Marketing, Ventas y Servicio. | El **CRM base es gratuito** de forma permanente. Su mayor fortaleza es la integración nativa y de alta calidad entre sus herramientas de CRM, Marketing y Ventas (el "Flywheel"). |
+| **Pipedrive** | CRM enfocado en la Gestión de Embudo de Ventas (*Pipeline*). | Muy valorado por su **interfaz visual y orientada al embudo**, lo que facilita el seguimiento de ofertas y la simplicidad para los equipos de ventas. Menos enfocado en marketing que HubSpot. |
+
+## 💰 3. Alternativas para Pequeñas Empresas y Precios Competitivos
+
+Estas opciones ofrecen un excelente equilibrio entre funcionalidad y precio, compitiendo directamente con la asequibilidad de Zoho para las pymes.
+
+| Aplicación | Enfoque Principal | Ventaja Clave frente a Zoho |
+| :--- | :--- | :--- |
+| **Freshsales** (de Freshworks) | CRM con IA (*Freddy AI*) para ventas y soporte. | Ofrece funcionalidades sólidas de IA (como *lead scoring* y predicción) y se integra bien con el ecosistema de Freshworks (Freshdesk, Freshchat). |
+| **monday sales CRM** | CRM altamente flexible y visual basado en Work OS. | Utiliza una interfaz de tablero (board) que es extremadamente flexible y fácil de adaptar a flujos de trabajo personalizados, ideal para equipos que valoran la gestión visual. |
+| **SugarCRM** | CRM de alto rendimiento con foco en la automatización de la experiencia del cliente (CX). | Ofrece una solución escalable para medianas y grandes empresas, con opciones de implementación *on-premise* o en la nube. |
+
+**Recomendación:** Si su principal preocupación es la **integración con marketing y la facilidad de uso**, **HubSpot** es el equivalente más directo en cuanto a funcionalidad de suite (aunque su precio escala de forma diferente). Si busca una **plataforma más simple y enfocada en el embudo**, **Pipedrive** es una excelente opción.
+
+
+
