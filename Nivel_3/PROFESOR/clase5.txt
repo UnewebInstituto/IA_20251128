@@ -1,0 +1,14 @@
+Asume el rol de experto en Análisis Predictivo de Ventas, toma en 
+cuenta el siguiente formato: Fecha, Ventas en USD, Inversión Mercadeo  en USD y Región (Correspode a los valores Occidente, Oriente, Centro Norte, Los Llanos y Sur), genera utilizando este formato un archivo CSV, con datos correspondientes a los primeros 6 meses del año 2025.
+
+GAMMA IA
+
+https://gamma.app/es
+
+*** UNIR VARIOS PDF ***
+https://smallpdf.com/es/unir-pdf
+
+Este enlace se va a incorporar al sitio web
+publicado en alwaysdata
+
+https://analisis-inversion-venta-fu0jmdq.gamma.site/
