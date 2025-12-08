@@ -1,0 +1,2 @@
+Extrae los 5 puntos clave, las estadísticas más relevantes y genera un análisis FODA (Fortalezas, Oportunidades, 
+Debilidades, Amenazas) basado en este texto.

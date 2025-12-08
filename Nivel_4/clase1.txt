@@ -1,0 +1,109 @@
+Ejercicio Práctico: "La Prueba de Turing Personal" 
+● Instrucción: Pide a tres IAs distintas (ChatGPT, Gemini, Deepseek) que expliquen "La computación cuántica" para un niño de 5 años.
+
+RESPUESTAS:
+
+Deepseek:
+¡Hola, pequeñín! 🌟 Imagina que tienes una caja mágica de colores.
+
+**En las computadoras normales** (como la tablet o el teléfono de mamá):
+- Tienes bolitas que solo pueden ser **rojas** o **azules**. 
+- Si quieres probar muchos colores, tienes que cambiar una bolita muchas veces, de rojo a azul, ¡y eso tarda mucho!
+
+**En una computadora cuántica**:
+- ¡Tienes bolitas **mágicas** que pueden ser **rojas Y azules al mismo tiempo**! ✨
+- Incluso pueden ser mitad roja, mitad azul, ¡o hasta de todos los colores del arcoíris a la vez!
+- Así, cuando tienes un problema (como encontrar un juguete escondido en tu cuarto), la bolita mágica puede mirar **todos los lugares a la vez** y decirte rápido dónde está.
+
+**Pero** hay un secreto: si las tocas fuerte o las miras sin cuidado, ¡dejan de ser mágicas y se vuelven solo de un color normal! 🎨
+
+**Así que en resumen**:  
+Es como tener un montón de ayudantes mágicos que prueban **todas las respuestas a la vez** para encontrar la correcta super rápido, ¡pero hay que tratarlos con mucho cuidado!
+
+¿Ves? ¡La magia de lo pequeñito (átomos) nos ayuda a resolver rompecabezas gigantes! 🧩🚀
+
+Gemini
+¡Claro que sí\! Imagina que la computadora que usas ahora es como una **luz que solo puede estar encendida o apagada**.
+
+-----
+
+### 💡 Computadoras Normales (Clásicas)
+
+  * **Bits:** Las computadoras normales usan **bits**. Un bit es como un interruptor de luz:
+      * **0** (Apagado)
+      * **1** (Encendido)
+  * Solo pueden estar en **una sola posición a la vez**. Es como si pudieras elegir entre un solo juguete: el coche o el oso.
+
+-----
+
+### 🌟 Computación Cuántica
+
+Ahora, la computación cuántica es mucho más mágica.
+
+  * **Qubits:** En lugar de bits, usan **qubits** (se pronuncia "kiu-bits").
+  * **Superposición:**
+
+[Image of a spinning coin]
+
+```
+Un qubit tiene un truco especial llamado **superposición**. Imagina que en lugar de un interruptor que solo puede estar encendido o apagado, tienes una **moneda girando en el aire**.
+* Mientras la moneda está girando, ¿es cara o cruz? ¡Es **las dos cosas a la vez**!
+* Un qubit puede ser **0, 1, o 0 y 1 al mismo tiempo** (mientras está en superposición). ¡Es como poder elegir el coche y el oso al mismo tiempo!
+```
+
+  * **Entrelazamiento:**
+    Otro truco es el **entrelazamiento**. Imagina que tienes dos de esas monedas mágicas girando, y están **conectadas secretamente**.
+      * Si tocas una moneda y ves que es "cara", sabes **instantáneamente** que la otra moneda, aunque esté muy lejos, es "cruz".
+      * Están conectadas de una manera especial y **comparten su información**.
+
+### 🚀 ¿Por qué es importante?
+
+Al poder ser 0 y 1 al mismo tiempo, las computadoras cuánticas pueden **probar muchísimas soluciones a la vez**, en lugar de ir probando una por una como hacen las computadoras normales.
+
+Esto las haría **súper, súper rápidas** para resolver problemas muy difíciles, como:
+
+1.  Hacer medicinas nuevas.
+2.  Crear materiales que no existen.
+3.  Descubrir cómo funcionan las estrellas.
+
+Por ahora, ¡son como unos **súper cerebros** que aún estamos aprendiendo a construir\!
+
+-----
+
+¿Te gustaría que te cuente un poco sobre cómo se ve una computadora cuántica de verdad?
+
+ChatGPT:
+
+Imagina que tienes una **caja mágica** para hacer cuentas.
+
+### 🧸 Computadoras normales
+
+Las computadoras normales son como **interruptores** que pueden estar:
+
+* 🔵 **Apagado (0)**
+* 🔴 **Encendido (1)**
+
+Con muchos interruptores hacen cálculos.
+
+### ✨ Computadoras cuánticas
+
+Pero en la computadora cuántica, los interruptores —llamados **qubits**— no son normales. Son como **una moneda girando en el aire**:
+
+* Puede ser **cara (0)**
+* Puede ser **cruz (1)**
+* O puede estar **girando**, siendo *un poquito cara y un poquito cruz al mismo tiempo* 🤯
+
+A eso se le llama **superposición**.
+
+### 🧲 Además… son amigos mágicos
+
+Los qubits pueden estar **entrelazados**, como si fueran **mejores amigos**:
+Si uno cambia, el otro también cambia **al instante**, aunque estén **muy lejos**. ¡Como si tuvieran walkie-talkies invisibles! 📡💫
+
+### 🍬 ¿Por qué es especial?
+
+Cuando los qubits pueden estar en muchas posiciones a la vez, la computadora cuántica puede probar **muchas respuestas al mismo tiempo**, como si tú buscaras un dulce en **todas las cajas de la casa a la vez**, en lugar de una por una.
+
+---
+
+Si quieres, puedo contártelo con dibujos, con ejemplos más técnicos, o explicártelo como si tuvieras 10, 15 o 20 años. ¿Quieres otra versión?
