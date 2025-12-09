@@ -1,0 +1,326 @@
+Prompt 1:
+
+Actúa como un experto Analista de Mercado y Editor de Contenidos Quiero escribir un eBook corto sobre Finanzas para estudiantes, Busca en la web las 3 tendencias más buscadas o discutidas sobre este tema en los últimos 6 meses, 
+Identifica cuáles son las 3 preguntas más frecuentes que hacen los usuarios en foros o redes sociales sobre esto, Basado en lo anterior, sugiéreme 3 títulos atractivos y virales para mi eBook. 
+
+Prompt 2:
+
+He decidido que mi eBook se titulará: Finanzas para Universitarios: La Guía CERO Deudas y CERO Estrés para Estudiantes. Necesito datos sólidos para respaldar mis argumentos. Por favor: 
+● Busca 5 estadísticas recientes (2024-2025) que demuestren la importancia de este tema. 
+● Incluye la fuente original o la organización que publicó el dato (ej: Forbes, OMS, Statista). 
+● Busca un caso de éxito real o una noticia reciente relacionada que pueda usar como ejemplo introductorio.
+
+Prompt 3:
+
+Asume el rol de Editor Senior de Best-Sellers, crea el índice detallado para mi eBook sobre Finanzas para Universitarios: La Guía CERO Deudas y CERO Estrés para Estudiantes, se requiere: ● El libro debe tener 4 Capítulos. 
+● Incluye una breve introducción y una conclusión con "Llamada a la acción". 
+● Para cada capítulo, detalla 3 subtítulos (bullet points) de lo que se debe hablar. 
+● El flujo debe ser lógico: Empezar desde lo básico hasta la aplicación práctica. 
+● Integra las estadísticas que encontraste en el paso anterior dentro de los capítulos correspondientes. 
+
+
+API DE GOOGLE
+https://ai.google.dev/gemini-api/docs?hl=es-419
+
+Guía de instalación:
+https://ai.google.dev/gemini-api/docs/quickstart?hl=es-419#before_you_begin
+
+Configuración de clave de API:
+https://ai.google.dev/gemini-api/docs/api-key?hl=es-419#set-api-env-var
+
+
+
+1) Desde Visual Studio Code, abrir una terminal.
+2) Ir a Command Prompt 
+3) Verificar la versión de Python 
+Comando >py --version
+E:\.PROFESORES\HENRY_DUQUE\IA_20251128\Nivel_4>py --version
+Python 3.13.5
+En caso de no estar instalado, se debe descargar e instalar:
+https://www.python.org/
+4) Instalar un entorno virtual. En caso de no encontrarse en el directorio, accedemos a la ubicación
+del mismo, a través del comando:
+cd directorio, por ejemplo:
+E:\.PROFESORES\HENRY_DUQUE\IA_20251128\Nivel_4>cd PROFESOR
+
+E:\.PROFESORES\HENRY_DUQUE\IA_20251128\Nivel_4\PROFESOR>
+
+comando
+|    módulo   
+|       |  entorno virtual
+|       |   |  directorio del entorno virtual
+|       |   |    |
+v       v   v    v
+python -m venv .venv
+
+5) Una vez instalado el entorno virtual, el siguiente
+paso es su activación.
+>.venv\scripts\activate
+
+E:\.PROFESORES\HENRY_DUQUE\IA_20251128\Nivel_4\PROFESOR>.venv\scripts\activate
+
+(.venv) E:\.PROFESORES\HENRY_DUQUE\IA_20251128\Nivel_4\PROFESOR>
+
+6) Ver las dependencia instaladas:
+(.venv) E:\.PROFESORES\HENRY_DUQUE\IA_20251128\Nivel_4\PROFESOR>pip list
+Package Version
+------- -------
+pip     25.1.1
+
+7) Una vez activado el entorno virtual, se procede
+a instalar la dependencia "genai", mediante el comando:
+pip install -q -U google-genai
+
+
+**** NOTA ****
+https://aistudio.google.com/app/api-keys?hl=es-419
+CLAVE DE API:
+
+AIzaSyBCzRrF72hD6anUrX2XBVu8d5-YiOtNhcY
+
+8) Crear el programa con la llave de la API KEY
+
+from google import genai
+
+client = genai.Client(api_key="AIzaSyBCzRrF72hD6anUrX2XBVu8d5-YiOtNhcY")
+
+response = client.models.generate_content(
+    model="gemini-2.5-flash", contents="Explica en pocas palabras cómo trabaja la IA"
+)
+print(response.text)
+
+9) Ejecutar el programa:
+py ejemplo01_API_GEMINI.py
+
+
+CASO JAVASCRIPT:
+****************
+¡Excelente\! Como experto en desarrollo, te proporcionaré un ejemplo completo de cómo interactuar con la API de Gemini (a través de la librería `genai`) utilizando una arquitectura moderna de Node.js (como *backend* de API) y una interfaz de usuario simple en HTML/JavaScript (como *frontend*).
+
+Dado que la librería `genai` se ejecuta en un entorno Node.js o Python (no directamente en el navegador), debemos usar Node.js para manejar la clave API y la llamada al modelo.
+
+-----
+
+## 💻 Ejemplo Práctico: Generador de Ideas de Contenido con Gemini
+
+Crearemos una aplicación simple donde el usuario ingresa un tema (en el HTML) y Node.js usa Gemini para generar ideas.
+
+### **Paso 1: Configuración del Proyecto (Node.js - Backend)**
+
+Necesitas tener Node.js instalado.
+
+1.  **Crea el directorio del proyecto:**
+
+    ```bash
+    mkdir gemini-web-app
+    cd gemini-web-app
+    npm init -y
+    ```
+
+2.  **Instala las dependencias necesarias:**
+
+      * **`@ibm/gen-ai`:** El SDK de IBM para interactuar con Gemini (asumo que te refieres al SDK de IBM, ya que usaste `pip install genai` anteriormente, aunque la API de Google Gemini usa `@google/genai`).
+      * **`express`:** Para crear el servidor API REST.
+      * **`cors`:** Para permitir que el *frontend* (HTML) acceda al *backend*.
+      * **`dotenv`:** Para manejar la clave API de forma segura.
+
+    <!-- end list -->
+
+    ```bash
+    npm install @ibm/gen-ai express cors dotenv
+    ```
+
+3.  **Crea el archivo `.env` (Configuración de Seguridad):**
+
+      * En la raíz del proyecto, crea un archivo llamado `.env` y pega tu clave API. **Nunca expongas esta clave en el código frontend.**
+
+    <!-- end list -->
+
+    ```dotenv
+    # Reemplaza 'TU_CLAVE_API_AQUI' con tu clave real.
+    GEMINI_API_KEY="TU_CLAVE_API_AQUI" 
+    ```
+
+4.  **Crea el archivo `server.js` (API Backend):**
+
+Este archivo manejará la lógica de la API de Gemini.
+
+```javascript
+// server.js (Backend Node.js)
+
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+const { Client, Models } = require('@ibm/gen-ai'); // Usando el SDK de IBM genai
+
+// --- Configuración ---
+const app = express();
+const port = 3000;
+
+// Inicialización del cliente IBM Gen AI con la clave del .env
+const client = new Client({ apiKey: process.env.GEMINI_API_KEY });
+const modelId = Models.GEMINI_20B_CHAT; // Modelo recomendado para tareas de chat/texto
+
+// Middlewares
+app.use(cors()); // Permite peticiones desde el frontend (puerto 8080, por ejemplo)
+app.use(express.json()); // Permite analizar el cuerpo de las peticiones JSON
+
+// --- Endpoint de la API ---
+app.post('/generate-ideas', async (req, res) => {
+    const { topic } = req.body;
+
+    if (!topic) {
+        return res.status(400).json({ error: 'El campo "topic" es requerido.' });
+    }
+
+    // 1. Crear el prompt (instrucción para Gemini)
+    const prompt = `Actúa como experto en marketing digital. Genera 5 ideas de contenido creativas y detalladas sobre el siguiente tema: "${topic}". Las ideas deben ser adecuadas para un blog.`;
+
+    try {
+        // 2. Llamada a la API de Gemini
+        const response = await client.text.generate({
+            modelId: modelId,
+            input: prompt,
+            parameters: {
+                decodingMethod: 'greedy',
+                maxNewTokens: 500,
+            }
+        });
+
+        // 3. Devolver la respuesta al frontend
+        const generatedText = response.results[0].generatedText;
+        res.json({ success: true, ideas: generatedText });
+
+    } catch (error) {
+        console.error('Error al llamar a la API de Gemini:', error);
+        res.status(500).json({ success: false, error: 'Error interno del servidor al generar contenido.' });
+    }
+});
+
+// Iniciar el servidor
+app.listen(port, () => {
+    console.log(`Servidor Node.js corriendo en http://localhost:${port}`);
+    console.log(`¡Listo para recibir peticiones POST a http://localhost:${port}/generate-ideas!`);
+});
+```
+
+### **Paso 2: Interfaz de Usuario (HTML/JavaScript - Frontend)**
+
+Crea un archivo llamado `index.html` en la raíz de tu proyecto.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contenido Gemini</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f7f9; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #333; text-align: center; }
+        textarea { width: 100%; height: 100px; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; width: 100%; }
+        button:hover { background-color: #0056b3; }
+        #results { margin-top: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; white-space: pre-wrap; background-color: #e9ecef; }
+        .loading { text-align: center; color: #007bff; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Ideas con Gemini 💡</h1>
+        <p>Introduce un tema para que la IA te genere 5 ideas de contenido para tu blog:</p>
+        <textarea id="topicInput" placeholder="Ej: Las ventajas del machine learning para PyMES"></textarea>
+        <button onclick="generateContent()">Generar Ideas</button>
+        
+        <div id="status" class="loading" style="display: none;">Generando contenido...</div>
+        
+        <h2>Resultados:</h2>
+        <div id="results">Esperando tema...</div>
+    </div>
+
+    <script>
+        // Función para interactuar con la API de Node.js (backend)
+        async function generateContent() {
+            const topic = document.getElementById('topicInput').value;
+            const resultsDiv = document.getElementById('results');
+            const statusDiv = document.getElementById('status');
+            
+            if (!topic) {
+                resultsDiv.innerHTML = 'Por favor, introduce un tema.';
+                return;
+            }
+
+            // Mostrar estado de carga
+            statusDiv.style.display = 'block';
+            resultsDiv.innerHTML = '';
+
+            try {
+                // Llamada AJAX (Fetch API) al backend de Node.js
+                const response = await fetch('http://localhost:3000/generate-ideas', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ topic: topic })
+                });
+
+                const data = await response.json();
+
+                // Ocultar estado de carga
+                statusDiv.style.display = 'none';
+
+                if (data.success) {
+                    // Mostrar las ideas generadas
+                    resultsDiv.innerText = data.ideas;
+                } else {
+                    // Manejar errores del servidor
+                    resultsDiv.innerText = `Error: ${data.error || 'No se pudo obtener la respuesta de la IA.'}`;
+                }
+
+            } catch (error) {
+                // Manejar errores de conexión (ej. el servidor Node.js no está corriendo)
+                statusDiv.style.display = 'none';
+                resultsDiv.innerText = 'Error de conexión: Asegúrate de que el servidor Node.js esté corriendo en el puerto 3000.';
+                console.error('Error en la comunicación con el backend:', error);
+            }
+        }
+    </script>
+</body>
+</html>
+```
+
+### **Paso 3: Ejecución**
+
+1.  **Iniciar el Backend (Node.js):**
+
+      * Abre tu terminal en el directorio `gemini-web-app`.
+
+    <!-- end list -->
+
+    ```bash
+    node server.js
+    # Verás: Servidor Node.js corriendo en http://localhost:3000
+    ```
+
+2.  **Abrir el Frontend (HTML):**
+
+      * Abre el archivo `index.html` en tu navegador.
+
+3.  **Interactuar:**
+
+      * Escribe un tema en el cuadro de texto del HTML y haz clic en "Generar Ideas".
+      * El JavaScript enviará el tema al *backend* de Node.js.
+      * Node.js usará la librería `genai` para llamar a la API de Gemini (usando tu clave secreta del `.env`).
+      * Node.js devolverá el resultado al JavaScript, que lo mostrará en la sección de resultados.
+
+¡Esto completa el ciclo de interacción con la API de Gemini usando HTML, JavaScript y Node.js\!no
+
+
+INSTALACIÓN DE NODEJS
+
+https://nodejs.org/en/download
+
+
+Instalación de dependencias:
+npm install @google/genai express cors dotenv

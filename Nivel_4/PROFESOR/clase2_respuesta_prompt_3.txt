@@ -1,0 +1,5 @@
+Asume el rol de Editor Senior de Best-Sellers, crea el índice detallado para mi eBook sobre Finanzas para Universitarios: La Guía CERO Deudas y CERO Estrés para Estudiantes, se requiere: ● El libro debe tener 4 Capítulos. 
+● Incluye una breve introducción y una conclusión con "Llamada a la acción". 
+● Para cada capítulo, detalla 3 subtítulos (bullet points) de lo que se debe hablar. 
+● El flujo debe ser lógico: Empezar desde lo básico hasta la aplicación práctica. 
+● Integra las estadísticas que encontraste en el paso anterior dentro de los capítulos correspondientes. 

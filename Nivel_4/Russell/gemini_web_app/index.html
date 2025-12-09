@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contenido Gemini</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f7f9; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #333; text-align: center; }
+        textarea { width: 100%; height: 100px; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; width: 100%; }
+        button:hover { background-color: #0056b3; }
+        #results { margin-top: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; white-space: pre-wrap; background-color: #e9ecef; }
+        .loading { text-align: center; color: #007bff; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Ideas con Gemini 💡</h1>
+        <p>Introduce un tema para que la IA te genere 5 ideas de contenido para tu blog:</p>
+        <textarea id="topicInput" placeholder="Ej: Las ventajas del machine learning para PyMES"></textarea>
+        <button onclick="generateContent()">Generar Ideas</button>
+        
+        <div id="status" class="loading" style="display: none;">Generando contenido...</div>
+        
+        <h2>Resultados:</h2>
+        <div id="results">Esperando tema...</div>
+    </div>
+
+    <script>
+        // Función para interactuar con la API de Node.js (backend)
+        async function generateContent() {
+            const topic = document.getElementById('topicInput').value;
+            const resultsDiv = document.getElementById('results');
+            const statusDiv = document.getElementById('status');
+            
+            if (!topic) {
+                resultsDiv.innerHTML = 'Por favor, introduce un tema.';
+                return;
+            }
+
+            // Mostrar estado de carga
+            statusDiv.style.display = 'block';
+            resultsDiv.innerHTML = '';
+
+            try {
+                // Llamada AJAX (Fetch API) al backend de Node.js
+                const response = await fetch('http://localhost:3000/generate-ideas', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ topic: topic })
+                });
+
+                const data = await response.json();
+
+                // Ocultar estado de carga
+                statusDiv.style.display = 'none';
+
+                if (data.success) {
+                    // Mostrar las ideas generadas
+                    resultsDiv.innerText = data.ideas;
+                } else {
+                    // Manejar errores del servidor
+                    resultsDiv.innerText = `Error: ${data.error || 'No se pudo obtener la respuesta de la IA.'}`;
+                }
+
+            } catch (error) {
+                // Manejar errores de conexión (ej. el servidor Node.js no está corriendo)
+                statusDiv.style.display = 'none';
+                resultsDiv.innerText = 'Error de conexión: Asegúrate de que el servidor Node.js esté corriendo en el puerto 3000.';
+                console.error('Error en la comunicación con el backend:', error);
+            }
+        }
+    </script>
+</body>
+</html>
