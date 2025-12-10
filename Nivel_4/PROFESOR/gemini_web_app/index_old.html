@@ -17,18 +17,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Prompt a Gemini 💡</h1>
-        <p>Pregunta a Gemini:</p>
-        <textarea id="topicInput" placeholder=""></textarea>
-        <button onclick="generateContent()">Preguntar</button>
+        <h1>Generador de Ideas con Gemini 💡</h1>
+        <p>Introduce un tema para que la IA te genere 5 ideas de contenido para tu blog:</p>
+        <textarea id="topicInput" placeholder="Ej: Las ventajas del machine learning para PyMES"></textarea>
+        <button onclick="generateContent()">Generar Ideas</button>
         
         <div id="status" class="loading" style="display: none;">Generando contenido...</div>
         
         <h2>Resultados:</h2>
-        <!--
         <div id="results">Esperando tema...</div>
-        -->
-        <textarea id="results">Esperando contenido...</textarea>
     </div>
 
     <script>

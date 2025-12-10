@@ -17,15 +17,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>Generador de Ideas con Gemini 💡</h1>
-        <p>Introduce un tema para que la IA te genere 5 ideas de contenido para tu blog:</p>
-        <textarea id="topicInput" placeholder="Ej: Las ventajas del machine learning para PyMES"></textarea>
-        <button onclick="generateContent()">Generar Ideas</button>
+        <h1>Promt a gemini 💡</h1>
+        <p>Pregunta a gemini:</p>
+        <textarea id="topicInput" placeholder="Ej:""></textarea>
+        <button onclick="generateContent()">Preguntar</button>
         
         <div id="status" class="loading" style="display: none;">Generando contenido...</div>
-        
         <h2>Resultados:</h2>
-        <div id="results">Esperando tema...</div>
+        <!--
+
+        <div id="results">Esperando tema...</div> 
+        -->
+
+            <textarea id="results">Eperando contenido...</textarea>
     </div>
 
     <script>
@@ -46,7 +50,7 @@
 
             try {
                 // Llamada AJAX (Fetch API) al backend de Node.js
-                const response = await fetch('http://localhost:3000/generate-ideas', {
+                const response = await fetch('http://localhost:3002/generate-ideas', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

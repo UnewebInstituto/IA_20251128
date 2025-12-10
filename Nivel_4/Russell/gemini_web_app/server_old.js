@@ -1,27 +1,39 @@
-// server.js (Backend Node.js)
+// server.js (Backend Node.js) - Versión Actualizada
 
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-// 🚨 CAMBIO 1: Importación de la librería oficial de Google
+const path = require('path');
+
+// CAMBIO CRUCIAL 1: Importar GoogleGenAI del SDK de Google
 const { GoogleGenAI } = require('@google/genai');
 
 // --- Configuración ---
 const app = express();
-const port = 3000;
+const port = 3003;
 
-// 🚨 CAMBIO 2: Inicialización del cliente de Google GenAI
-// La SDK busca automáticamente GEMINI_API_KEY en el entorno.
+// CAMBIO CRUCIAL 2: Inicialización del cliente con el nombre correcto de la clase (GoogleGenAI)
+// Usamos 'ai' como nombre de variable para el cliente de la IA
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }); 
 
-// Usamos un modelo moderno y eficiente para tareas de texto/chat
-const modelId = "gemini-2.5-flash"; // Modelo eficiente, recomendado para tareas de texto/blog.
+// CAMBIO CRUCIAL 3: Definir el modelo como una cadena de texto (string).
+// gemini-2.5-flash es el modelo más rápido y rentable para esta tarea.
+const modelId = "gemini-2.5-flash"; 
 
 // Middlewares
 app.use(cors()); // Permite peticiones desde el frontend
 app.use(express.json()); // Permite analizar el cuerpo de las peticiones JSON
 
 // --- Endpoint de la API ---
+
+/*
+app.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+})
+*/
+
+app.use(express.static(path.join(__dirname)));
+
 app.post('/generate-ideas', async (req, res) => {
     const { topic } = req.body;
 
@@ -33,23 +45,21 @@ app.post('/generate-ideas', async (req, res) => {
     const prompt = `Actúa como experto en marketing digital. Genera 5 ideas de contenido creativas y detalladas sobre el siguiente tema: "${topic}". Las ideas deben ser adecuadas para un blog.`;
 
     try {
-        // 🚨 CAMBIO 3: Llamada a la API usando el método generateContent
+        // CAMBIO CRUCIAL 4: Llamada a la API de Gemini usando el método generateContent del cliente 'ai'.
         const response = await ai.models.generateContent({
             model: modelId,
-            // La entrada se pasa en formato de contenido (Content)
-            contents: [{ role: "user", parts: [{ text: prompt }] }],
+            contents: prompt,
             config: {
-                // Parámetros de configuración del modelo (ej. temperatura en lugar de decodingMethod)
-                temperature: 0.7, // 0.7 es un buen valor para creatividad controlada
-                maxOutputTokens: 500, // Limita la longitud de la respuesta
+                // maxOutputTokens reemplaza a maxNewTokens
+                maxOutputTokens: 500, 
+                // decodingMethod: 'greedy' ya no es necesario o es gestionado por defecto.
             }
         });
 
-        // 🚨 CAMBIO 4: Extracción de la respuesta
-        // El texto se extrae directamente de 'response.text'
-        const generatedText = response.text;
+        // CAMBIO CRUCIAL 5: Devolver la respuesta al frontend
+        // El resultado de generateContent se accede directamente a través de .text
+        const generatedText = response.text; 
         
-        // 3. Devolver la respuesta al frontend
         res.json({ success: true, ideas: generatedText });
 
     } catch (error) {

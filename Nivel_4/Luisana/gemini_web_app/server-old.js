@@ -10,14 +10,11 @@ const { GoogleGenAI } = require('@google/genai');
 
 // --- Configuración ---
 const app = express();
-const port = 3001;
+const port = 3002;
 
 // CAMBIO CRUCIAL 2: Inicialización del cliente con el nombre correcto de la clase (GoogleGenAI)
 // Usamos 'ai' como nombre de variable para el cliente de la IA
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }); 
-
-
-console.log("API KEY:", process.env.GEMINI_API_KEY);
 
 // CAMBIO CRUCIAL 3: Definir el modelo como una cadena de texto (string).
 // gemini-2.5-flash es el modelo más rápido y rentable para esta tarea.
@@ -36,6 +33,7 @@ app.get('/', (req,res) => {
 */
 app.use(express.static(path.join(__dirname)));
 
+
 app.post('/generate-ideas', async (req, res) => {
     const { topic } = req.body;
 
@@ -44,10 +42,7 @@ app.post('/generate-ideas', async (req, res) => {
     }
 
     // 1. Crear el prompt (instrucción para Gemini)
-    /*
     const prompt = `Actúa como experto en marketing digital. Genera 5 ideas de contenido creativas y detalladas sobre el siguiente tema: "${topic}". Las ideas deben ser adecuadas para un blog.`;
-    */
-    const prompt = topic;
 
     try {
         // CAMBIO CRUCIAL 4: Llamada a la API de Gemini usando el método generateContent del cliente 'ai'.
@@ -56,7 +51,7 @@ app.post('/generate-ideas', async (req, res) => {
             contents: prompt,
             config: {
                 // maxOutputTokens reemplaza a maxNewTokens
-                // maxOutputTokens: 500, 
+                maxOutputTokens: 500, 
                 // decodingMethod: 'greedy' ya no es necesario o es gestionado por defecto.
             }
         });
