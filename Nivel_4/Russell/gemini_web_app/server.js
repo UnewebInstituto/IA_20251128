@@ -11,8 +11,8 @@ const { GoogleGenAI } = require('@google/genai');
 // --- Configuración ---
 // CAMBIO CRUCIAL 1: Obtener el puerto y el host de las variables de entorno.
 // Si process.env.PORT no existe (ej. en desarrollo local), usa 3000 o 3003 como fallback.
-const app = express();
-const port = process.env.port || 8102; 
+const app  = express();
+const port = process.env.PORT || 8100; 
 const HOST = process.env.HOST || '0.0.0.0';
 
 // CAMBIO CRUCIAL 2: Inicialización del cliente con el nombre correcto de la clase (GoogleGenAI)

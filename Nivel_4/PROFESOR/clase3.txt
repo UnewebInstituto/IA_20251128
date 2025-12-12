@@ -301,3 +301,7 @@ app.post('/geminiwebapp/generate-ideas', async (req, res) => {
     ```
 
 Tras estos cambios y el reinicio del *upstream* en Alwaysdata, la solicitud `http://hduque-test.alwaysdata.net/geminiwebapp` debería ser resuelta correctamente por el *middleware* `express.static`, sirviendo el archivo `index.html`.
+
+ftp-luisaalibaba.alwaysdata.net
+luisaalibaba
+Contraseña: Catia

@@ -28,10 +28,8 @@
         <h2>Resultados:</h2>
         <!--
         <div id="results">Esperando Contenido...</div>
-        
-        <textarea id="results"> Esperando contenido</textarea>
         -->
-        <div id="results">Esperando Contenido...</div>
+        <textarea id="results"> Esperando contenido</textarea>
     </div>
 
     <script>
@@ -53,7 +51,8 @@
             try {
                 // Llamada AJAX (Fetch API) al backend de Node.js
                 //const response = await fetch('http://geminiwebapp/generate-ideas',
-                const response = await fetch('/geminiwebapp/generate-ideas', {
+                const response = await fetch('geminiwebapp/generate-ideas', 
+                {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -67,25 +66,18 @@
                 statusDiv.style.display = 'none';
 
                 if (data.success) {
-
                     // Mostrar las ideas generadas
-                    //resultsDiv.innerText = data.ideas;
-                    resultsDiv.innerHTML = data.ideas;
+                    resultsDiv.innerText = data.ideas;
                 } else {
-
                     // Manejar errores del servidor
-                    //resultsDiv.innerText = `Error: ${data.error || 'No se pudo obtener la respuesta de la IA.'}`;
-
-                    resultsDiv.innerHTML = `Error: ${data.error || 'No se pudo obtener la respuesta de la IA.'}`;
+                    resultsDiv.innerText = `Error: ${data.error || 'No se pudo obtener la respuesta de la IA.'}`;
                 }
 
             } catch (error) {
                 // Manejar errores de conexión (ej. el servidor Node.js no está corriendo)
                 statusDiv.style.display = 'none';
-                //resultsDiv.innerText = 'Error de conexión: Asegúrate de que el servidor Node.js esté corriendo en el puerto 3000.';
-                resultsDiv.innerHTML = 'Error de conexión: Asegúrate de que el servidor Node.js esté corriendo en el puerto 3000.';
+                resultsDiv.innerText = 'Error de conexión: Asegúrate de que el servidor Node.js esté corriendo en el puerto 3000.';
                 console.error('Error en la comunicación con el backend:', error);
-                
             }
         }
     </script>
